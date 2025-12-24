@@ -2,7 +2,7 @@
 
 ### Project Overview
 
-This repository is a **fork of the original QtTinySA project**, enhanced with the crucial capability to **demodulate and play audio** from signals displayed on the QtTinySA spectrum analyzer.
+This repository is a **fork of the original QtTinySA project**, enhanced with the capability to **demodulate and play audio** from signals displayed on the QtTinySA spectrum analyzer.
 
 By combining the wide-ranging analysis of the QtTinySA/TinySA with the real-time audio capability of an RTL-SDR dongle, this project transforms the spectrum analyzer into a dynamic receiver.
 
@@ -32,7 +32,7 @@ Minimal changes were made to the original QtTinySA structure:
 
 * **`QtTinySA.py`:** Hook added to launch the new audio popup, calls into sdr-audio to set frequency where Marker 1 defined
 * **`spectrum.ui`:** Updated to add the new "SDR Audio" menu item under the **Measurements** menu.
-* **`sdr-audio.ui`:** Defines the user interface for the dedicated audio control popup.
+* **`sdr-audio-popup.ui`:** Defines the user interface for the dedicated audio control popup.
 * **`sdr-audio.py`:** The core engine containing the **`rtlsdr`** code responsible for:
     * Waveform capture and buffering.
     * Real-time AM/FM demodulation.
